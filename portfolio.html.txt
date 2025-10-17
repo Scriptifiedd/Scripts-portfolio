@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Doe | Data Analyst Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Basic Reset & Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212; /* Dark background */
+            color: #e0e0e0; /* Light grey text */
+            line-height: 1.6;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #1a1a1a;
+            padding: 1rem 10%;
+            border-bottom: 1px solid #333;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #e0e0e0;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00aaff; /* Highlight color on hover */
+        }
+
+        /* Main Content & Sections */
+        main {
+            padding: 0 10%;
+        }
+
+        section {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 80px; /* Offset for fixed header */
+        }
+
+        h1, h2 {
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            border-bottom: 2px solid #00aaff;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        p {
+            max-width: 700px;
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+
+        /* Specific Section Styles */
+        #home {
+            min-height: 100vh; /* Make hero section fill the screen */
+            text-align: center;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: #aaaaaa;
+        }
+
+        .skills-container {
+            margin-top: 2rem;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background-color: #252525;
+            border: 1px solid #444;
+            color: #e0e0e0;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            margin: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .contact-button {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.8rem 2rem;
+            background-color: #00aaff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background-color: #0088cc;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+            border-top: 1px solid #333;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Alex Doe</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero-content">
+                <h1>Hi, I'm Alex Doe</h1>
+                <p class="subtitle">Data Science Enthusiast & Aspiring Analyst</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Welcome to my portfolio! I am a passionate and curious problem-solver with a love for finding the stories hidden within data. My journey began with a fascination for how numbers can explain the world around us, which led me to the field of data analytics. I enjoy cleaning data, discovering trends, and visualizing my findings to make them understandable to everyone.
+            </p>
+            <p>
+                I am currently honing my skills in machine learning and seeking opportunities where I can contribute to data-driven decision-making and continue to grow as an analyst.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">NumPy</span>
+                <span class="skill-tag">Scikit-learn</span>
+                <span class="skill-tag">Matplotlib</span>
+                <span class="skill-tag">Seaborn</span>
+                <span class="skill-tag">Tableau</span>
+                <span class="skill-tag">Microsoft Excel</span>
+                <span class="skill-tag">Data Cleaning</span>
+                <span class="skill-tag">Data Visualization</span>
+                <span class="skill-tag">Statistical Analysis</span>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>I'm currently looking for new opportunities and would love to connect. Feel free to send me a message!</p>
+            <a href="mailto:alex.doe.email@example.com" class="contact-button">Say Hello</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Alex Doe. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
